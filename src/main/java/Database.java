@@ -1,3 +1,5 @@
+import coviddata.Covid19Data;
+
 import java.util.ArrayList;
 
 public class Database {
@@ -8,6 +10,10 @@ public class Database {
         fileHandler = new FileHandler();
         dataSet = fileHandler.hentData();
 
+    }
+
+    public ArrayList<Covid19Data> getDataSet() {
+        return dataSet;
     }
 
     @Override

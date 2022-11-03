@@ -1,3 +1,5 @@
+package coviddata;
+
 public class Covid19Data {
     private String region;
     private String aldersKlasse;
@@ -13,6 +15,30 @@ public class Covid19Data {
         this.døde = døde;
         this.indlagtPåIntensiv = indlagtPåIntensiv;
         this.indlagtTotal = indlagtTotal;
+    }
+
+    public String getRegion() {
+        return region;
+    }
+
+    public String getAldersKlasse() {
+        return aldersKlasse;
+    }
+
+    public int getTilfælde() {
+        return tilfælde;
+    }
+
+    public int getDøde() {
+        return døde;
+    }
+
+    public int getIndlagtPåIntensiv() {
+        return indlagtPåIntensiv;
+    }
+
+    public int getIndlagtTotal() {
+        return indlagtTotal;
     }
 
     @Override
